@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5758d2a8-46a6-4677-8fe5-b2f662d349dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1qkHtmZHD5TsN32r4sRpWXPdFzS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/3D Objects/COAT" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CovidEVT" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5758d2a8-46a6-4677-8fe5-b2f662d349dd" name="Default Changelist" comment="" />
+      <created>1617616884378</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617616884378</updated>
+      <workItem from="1617616887489" duration="3985000" />
+      <workItem from="1617629194083" duration="778000" />
+      <workItem from="1617629980898" duration="5228000" />
+      <workItem from="1617639237505" duration="7434000" />
+      <workItem from="1617650564837" duration="1858000" />
+      <workItem from="1617692694308" duration="25432000" />
+      <workItem from="1617778177286" duration="5263000" />
+      <workItem from="1617785227880" duration="385000" />
+      <workItem from="1617785668318" duration="494000" />
+      <workItem from="1617786198521" duration="414000" />
+      <workItem from="1617786664047" duration="120000" />
+      <workItem from="1617787005245" duration="10649000" />
+      <workItem from="1617812397844" duration="10137000" />
+      <workItem from="1617864380150" duration="94000" />
+      <workItem from="1617865299696" duration="6329000" />
+      <workItem from="1617884003090" duration="3399000" />
+      <workItem from="1617887976456" duration="636000" />
+      <workItem from="1617901781046" duration="70000" />
+      <workItem from="1617966730154" duration="62000" />
+      <workItem from="1618037789470" duration="22000" />
+      <workItem from="1618405528641" duration="1317000" />
+      <workItem from="1618607095356" duration="21000" />
+      <workItem from="1618997719738" duration="326000" />
+      <workItem from="1619009515003" duration="446000" />
+      <workItem from="1619881943356" duration="1179000" />
+      <workItem from="1619955084742" duration="29000" />
+      <workItem from="1620905735130" duration="26000" />
+      <workItem from="1628517610316" duration="610000" />
+      <workItem from="1633775945139" duration="925000" />
+      <workItem from="1633968503646" duration="601000" />
+      <workItem from="1633969347200" duration="2244000" />
+      <workItem from="1633973939659" duration="705000" />
+      <workItem from="1636626591902" duration="44000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1636626632048">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1636626632048" />
+    <state width="1877" height="188" key="GridCell.Tab.0.bottom" timestamp="1633971614913">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="188" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1633971614913" />
+    <state width="1877" height="188" key="GridCell.Tab.0.center" timestamp="1633971614913">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="188" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1633971614913" />
+    <state width="1877" height="188" key="GridCell.Tab.0.left" timestamp="1633971614913">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="188" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1633971614913" />
+    <state width="1877" height="188" key="GridCell.Tab.0.right" timestamp="1633971614913">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="188" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1633971614913" />
+  </component>
+</project>

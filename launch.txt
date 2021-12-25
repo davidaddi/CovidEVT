@@ -1,0 +1,4 @@
+🇫🇷 Éxécuter le fichier 'index.js'
+🇬🇧 Run the 'index.js' file
+
+> Terminal command : node index.js
