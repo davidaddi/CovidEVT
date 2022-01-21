@@ -4,6 +4,10 @@
 
 🕊️ Here is the link of the bot : https://twitter.com/covidevt
 
+<h3> Launch </h3>
+Run the 'getcsv.js' first - <code>node getcsv.js </code>
+Then run 'index.js' - <code> node index.js </code>
+
 <h3> mainTweet.js </h3>
 We're starting by initializing the different Node modules for our code.
 
