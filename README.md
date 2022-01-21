@@ -247,6 +247,9 @@ const mt = require("./mainTweet"); // from mainTweet.js
 const rp = require("./Reply"); // from Reply.js
 </pre>
 
+To finally send the Tweet : 
+
+<pre>
 async function sendTweet(err, data) {
     if (err) {
       console.log(err)
@@ -263,3 +266,5 @@ async function sendTweet(err, data) {
         });
     }
 } 
+
+</pre>
