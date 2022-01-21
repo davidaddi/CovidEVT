@@ -1,19 +1,22 @@
-// package (getcsv.js)
-// - permet d'obtenir la date d'aujourd'hui & de télécharger un fichier csv puis le convertir en JSON 
-
-// const getTDDate = require('./getTDDate'); 
-// const myModule = require('./getCSV'); 
+// package (https://nodejs.org/api/fs.html)
+// - provides a utility for manipulating system files
+// $ npm install fs
+var fs = require('fs');
 
 // package (https://www.npmjs.com/package/twit)
-// - permet d'accéder aux différentes fonctions de Twitter depuis un script/terminal
-// $ npm twit
-
+// - provides you to access the different functions of Twitter from a terminal
+// $ npm install twit
 var Twit = require('twit');
-const fetch = require("node-fetch");
+
+// package (https://www.npmjs.com/package/dotenv)
+// provides to load environment variables from an .env file
+// $ npm install dotenv
 require('dotenv').config();
 
-// on initialise les connections à twitter
+var file = 'files/data.csv';
+var content = fs.readFileSync(file, "utf8");
 
+// initialize connections to twitter
 var T = new Twit({
     consumer_key:         process.env.CONSUMER_KEY,
     consumer_secret:      process.env.CONSUMER_SECRET,
@@ -23,27 +26,44 @@ var T = new Twit({
     strictSSL:            true,     // optional - requires SSL certificates to be valid.
 });
 
-const FetchURL = `https://static.data.gouv.fr/resources/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19-1/20211221-212503/vacsi-tot-fra-${(new Date()).toISOString().slice(0,10)}-21h25.json`;
 
-async function Reply() {
-  fetch(FetchURL)
-  .then(reponse => reponse.json()) 
-          .then(data => {
-            T.post('statuses/update', {
-              status: '🗓️ Évolution des vaccinations ' +
-                          ": \n 💉 Nouvelles premières doses :" + data[0].n_tot_dose1.toLocaleString() + 
-                          " \n 💉💉 Nouvelles deuxième doses : " + data[0].n_tot_rappel.toLocaleString() +
-                          '\n 💉💉💉 Nouvelles troisième doses : ' + data[0].n_tot_complet.toLocaleString() +
-                          '\n\n 🇫🇷 Couverture vaccinale ' + data[0].couv_tot_dose1,
-              in_reply_to_status_id: '1472259952467136513'
-            }, function (err, data, response) {
-              if (err) {
-                console.log(err)
-              } else {
-                console.log(data.text)
-              }
-          })
-          })
-  };
+module.exports.Reply = async function Reply() {
 
-Reply(); 
+
+  fs.readFile('./files/data.csv', 'utf-8', function(err, data) {
+    if (err) throw err;
+
+    var lines = data.trim().split('\n');
+    var lastLine = lines.slice(-1)[0];
+
+    var fields = lastLine.split(',');
+    var exportLine = fields.slice(-1)[0].replace('file:\\\\', '');
+
+    array = exportLine.split(';');
+});
+
+
+  // search last tweet of the account
+  var params = {screen_name: 'covidevt', count: 1}; 
+  T.get('statuses/user_timeline', params, function(error, tweets, response) {
+    if (!error) {
+      // Reply to the main tweet using previous scrapped datas
+      T.post('statuses/update', { 
+        status: '🗓️ Évolution des vaccinations ' +
+                    ": \n\n💉 Nouvelles premières doses : " + parseInt(array[2]).toLocaleString() + 
+                    " \n 💉💉 Nouvelles deuxième doses : " + parseInt(array[4]).toLocaleString() +
+                    '\n 💉💉💉 Nouvelles troisième doses : ' + parseInt(array[3]).toLocaleString() +
+                    '\n🇫🇷 💉 Couverture vaccinale : ' + array[8] +'%',
+        in_reply_to_status_id: tweets[0].id_str
+    }, function (err, data, response) {
+        if (err) {
+          console.log(err)
+        } else {
+          // console.log(data.text + ' tweeted!')
+        }
+      })
+    }
+  });
+}
+
+// Reply()
