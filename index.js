@@ -6,23 +6,25 @@ var fs = require('fs');
 const mt = require("./mainTweet"); // from mainTweet.js 
 const rp = require("./Reply"); // from Reply.js
 
+function one() {
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      mt.getData(); 
+      console.log(' 📧 Main message tweeted! ');
+      resolve();
+    }, 3000);
+  })
+}
+
+function two() {
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      rp.Reply(); 
+      console.log(' 📧 Main message tweeted! ');
+      resolve();
+    }, 3000);
+  })
+}
 
 
-async function sendTweet(err, data) {
-    if (err) {
-      console.log(err)
-    } else {
-        mt.getData(); 
-        console.log(' 📧 Main message tweeted! ');
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        rp.Reply();
-        console.log(' ✅ Reply tweeted!')
-        await new Promise(resolve => setTimeout(resolve, 1000))
-        fs.unlink('files/data.csv', function (err) {
-          if (err) throw err;
-          console.log(' 🗑️ File deleted!');
-        });
-    }
-} 
-
-sendTweet(); 
+one().then(two)
